@@ -5,10 +5,11 @@
 
 /dts-v1/;
 
-#include "imx8mm-evk.dts"
+#include "imx8mm-evkb.dts"
 
 / {
 	model = "FSL i.MX8MM LPDDR4 EVK with QCA WIFI revC board ";
+	compatible = "fsl,imx8mm-evk", "fsl,imx8mm";
 };
 
 /delete-node/&pmic_nxp;
