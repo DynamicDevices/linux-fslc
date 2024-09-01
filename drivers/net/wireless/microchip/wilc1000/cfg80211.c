@@ -377,7 +377,7 @@ static int connect(struct wiphy *wiphy, struct net_device *dev,
 	}
 
 	if (wfi_drv->usr_scan_req.scan_result) {
-		netdev_err(vif->ndev, "%s: Scan in progress\n", __func__);
+#		netdev_err(vif->ndev, "%s: Scan in progress\n", __func__);
 		ret = -EBUSY;
 		goto out_error;
 	}
